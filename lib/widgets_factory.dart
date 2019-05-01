@@ -39,15 +39,15 @@ import 'package:url_launcher/url_launcher.dart';
 ///
 /// 1. If flow contains only one element, no [Row] widget is added
 /// 2. If flow doesn't have any sibling no [Column] widget is added
-/// 
+///
 /// For example:
 /// <img src='http://example.com/foo.jpg'>
 /// <span id='firstSpan'>Lorem ipsum</span>
 /// <p>Docor sit</p>
 /// <span id='secondSpan'>net</span>
-/// 
+///
 /// Renders as following Widget tree:
-/// 
+///
 /// [Column]
 ///   [Row]
 ///     [TransitionToImage]
@@ -55,10 +55,10 @@ import 'package:url_launcher/url_launcher.dart';
 ///     [Text] = Lorem ipsum
 ///   [Text] - Docor sit
 ///   [Text] - net
-///   
+///
 /// To extend rendering of tag, extend [ElementDescriptor] class, implement
-/// [ElementDescriptor]#render method and replace descriptor in 
-/// [WidgetsFactory]#allElements map. 
+/// [ElementDescriptor]#render method and replace descriptor in
+/// [WidgetsFactory]#allElements map.
 class WidgetsFactory {
   static const List<ElementDescriptor> _blockLevelElements = [
     ElementDescriptor(name: 'body', supported: true, isBlock: true),
@@ -96,7 +96,7 @@ class WidgetsFactory {
     ElementDescriptor(name: 'pre', supported: false, isBlock: true),
     ElementDescriptor(name: 'section', supported: true, isBlock: true),
     ElementDescriptor(name: 'table', supported: false, isBlock: true),
-    ElementDescriptor(name: 'ul', supported:   false, isBlock: true),
+    ElementDescriptor(name: 'ul', supported: false, isBlock: true),
   ];
 
   static const List<ElementDescriptor> _inlineElements = [
@@ -268,10 +268,13 @@ class WidgetsFactory {
 class ElementDescriptor {
   /// HTML name of the element
   final String name;
+
   /// Flag that provides information if this element is supported
   final bool supported;
+
   /// Flag that provides information if this is an inline element
   final bool isInline;
+
   /// Flag that provides ionformation if this is a block element
   final bool isBlock;
 
