@@ -1,0 +1,21 @@
+name: flutter_html_renderer
+description: Simple HTML renderer for flutter. Converts HTML into Widgets
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  html: ^0.13.4+1
+  flutter_advanced_networkimage: ^0.4.15
+  url_launcher: 5.0.2
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+
