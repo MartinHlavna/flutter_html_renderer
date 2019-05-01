@@ -50,7 +50,7 @@ HtmlRenderer(
 
 // CUSTOM RENDERING FOR DIV
 class DivDescriptor extends ElementDescriptor {
-      const AnchorDescriptor()
+      const DivDescriptor()
       : super(
         name: 'div',
         supported: true,

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="961855fe-eb00-4292-b03d-dd9bf164793c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/widgets_factory.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
+            <state relative-caret-position="-2286">
+              <caret line="84" column="30" lean-forward="true" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
               <folding>
                 <element signature="e#32#71#0" expanded="true" />
               </folding>
@@ -94,8 +95,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="144">
-                <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
+              <first_editor relative-caret-position="180">
+                <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
               </first_editor>
               <second_editor />
             </state>
@@ -136,9 +137,9 @@
         <option value="$PROJECT_DIR$/LICENSE" />
         <option value="$PROJECT_DIR$/test/flutter_html_renderer_test.dart" />
         <option value="$PROJECT_DIR$/lib/flutter_html_renderer.dart" />
-        <option value="$PROJECT_DIR$/lib/widgets_factory.dart" />
         <option value="$PROJECT_DIR$/CHANGELOG.md" />
         <option value="$PROJECT_DIR$/pubspec.yaml" />
+        <option value="$PROJECT_DIR$/lib/widgets_factory.dart" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -167,11 +168,6 @@
               <item name="flutter_html_renderer" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="flutter_html_renderer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flutter_html_renderer" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -182,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556701891587" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556702221004" />
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="/usr/bin/node" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -250,7 +246,7 @@
       <workItem from="1556353368548" duration="90000" />
       <workItem from="1556353603144" duration="3235000" />
       <workItem from="1556457649877" duration="8358000" />
-      <workItem from="1556695448892" duration="6437000" />
+      <workItem from="1556695448892" duration="6765000" />
     </task>
     <task id="LOCAL-00001" summary="Filling information in pubspec.yaml">
       <created>1556701397276</created>
@@ -273,16 +269,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556701695950</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="formating">
+      <created>1556701939389</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1556701939389</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24691000" />
+    <option name="totallyTimeSpent" value="25019000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="27" width="1853" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29496402" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29496402" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Nl-Palette" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -302,8 +306,8 @@
       <window_info anchor="bottom" id="Application Servers" order="8" sideWeight="0.49786323" weight="0.32896176" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Version Control" order="10" sideWeight="0.49358973" weight="0.32896176" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.48290598" visible="true" weight="0.32824427" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4028777" weight="0.32715377" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.48290598" weight="0.32824427" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4028777" visible="true" weight="0.32715377" />
       <window_info anchor="bottom" id="Dart Analysis" order="13" sideWeight="0.4997233" weight="0.3297062" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Flutter Performance" order="15" side_tool="true" />
@@ -383,7 +387,8 @@
     <MESSAGE value="Filling information in pubspec.yaml" />
     <MESSAGE value="Filling information in CHANGELOG.md" />
     <MESSAGE value="pub publish preparation" />
-    <option name="LAST_COMMIT_MESSAGE" value="pub publish preparation" />
+    <MESSAGE value="formating" />
+    <option name="LAST_COMMIT_MESSAGE" value="formating" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/html-0.13.4+1/lib/dom.dart">
@@ -404,16 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
           <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/widgets_factory.dart">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="98" column="46" selection-start-line="98" selection-start-column="46" selection-end-line="98" selection-end-column="46" />
-          <folding>
-            <element signature="e#32#71#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -461,11 +456,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/widgets_factory.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2286">
+          <caret line="84" column="30" lean-forward="true" selection-start-line="84" selection-start-column="30" selection-end-line="84" selection-end-column="30" />
+          <folding>
+            <element signature="e#32#71#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="144">
-            <caret line="131" column="46" selection-start-line="131" selection-start-column="46" selection-end-line="131" selection-end-column="46" />
+          <first_editor relative-caret-position="180">
+            <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
           </first_editor>
           <second_editor />
         </state>
