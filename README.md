@@ -2,7 +2,7 @@
 
 Simple HTML renderer for flutter. Converts HTML into Widgets.
 
-Warning: This is alfa version! It is not recommended to use in production projects as API may still change!
+Warning: This is alpha version! It is not recommended to use in production projects as API may still change!
 
 ## Why
 
@@ -111,6 +111,8 @@ HtmlRenderer(
   * nav
   * p
   * section
+  * iframe (partial support: only iframes embeding YouTube videos)
+  
 * Inline
   * abbr
   * acronym
@@ -121,8 +123,7 @@ HtmlRenderer(
 
 ## Roadmap
 
-* v 0.1.0 - support for embeded youtube videos
-* v 0.2.0 - support for formating element (b, i, strong, ...)
+* v 0.2.0 - support for formating elements (b, i, strong, ...)
 * v 0.3.0 - support for ul, ol, li
 * v 0.4.0 - support for tables
 * v 0.5.0 - polishing of default rendering of all element supported so far

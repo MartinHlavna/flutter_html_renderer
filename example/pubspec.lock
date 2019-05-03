@@ -68,7 +68,7 @@ packages:
       path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.1.0"
   flutter_svg:
     dependency: transitive
     description:
@@ -247,6 +247,20 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.3.1"
+  youtube_player_flutter:
+    dependency: transitive
+    description:
+      name: youtube_player_flutter
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.1.0"
+  ytview:
+    dependency: transitive
+    description:
+      name: ytview
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.0.7+3"
 sdks:
   dart: ">=2.1.0 <3.0.0"
   flutter: ">=1.2.0 <2.0.0"

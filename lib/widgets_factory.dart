@@ -6,6 +6,7 @@ import 'package:flutter_advanced_networkimage/provider.dart';
 import 'package:flutter_advanced_networkimage/transition.dart';
 import 'package:html/dom.dart' as dom;
 import 'package:url_launcher/url_launcher.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 /// Factory for rewriting HTML into widget sets.
 /// Despite changes in HTML5, this renderer uses HTML4 logic of
@@ -120,7 +121,7 @@ class WidgetsFactory {
     ElementDescriptor(name: 'em', supported: false, isInline: true),
     ElementDescriptor(name: 'embed', supported: false, isInline: true),
     ElementDescriptor(name: 'i', supported: false, isInline: true),
-    ElementDescriptor(name: 'iframe', supported: false, isInline: true),
+    IframeDescriptor(),
     ImgDescriptor(),
     ElementDescriptor(name: 'input', supported: false, isInline: true),
     ElementDescriptor(name: 'ins', supported: false, isInline: true),
@@ -407,6 +408,50 @@ class PDescriptor extends ElementDescriptor {
       child: children,
       padding: EdgeInsets.only(bottom: 5),
     );
+  }
+}
+
+/// <iframe> descriptor.
+/// If src is youtube embed, it will render video using youtube_player_flutter
+class IframeDescriptor extends ElementDescriptor {
+  const IframeDescriptor()
+      : super(
+    name: 'iframe',
+    supported: true,
+    isInline: false,
+    isBlock: true,
+  );
+
+  @override
+  Future<Widget> render(dom.Element element,
+      BuildContext context,
+      WidgetsFactory widgetsFactory,
+      LinkHandler linkHandler,
+      RenderingContext renderingContext) async {
+    String src = element.attributes['src'];
+    if (src == null || src
+        .trim()
+        .isEmpty) {
+      return Container();
+    }
+    String videoId = YoutubePlayer.convertUrlToId(src);
+    if (videoId != null) {
+      //this is youtube video.
+      ThemeData theme = Theme.of(context);
+      return YoutubePlayer(
+        context: context,
+        videoId: videoId,
+        autoPlay: false,
+        showVideoProgressIndicator: true,
+        videoProgressIndicatorColor: theme.primaryColor,
+        progressColors: ProgressColors(
+          playedColor: theme.primaryColor,
+          handleColor: theme.accentColor,
+        ),
+      );
+    }
+    //TODO: Maybe one day we will fully support iframes
+    return Container();
   }
 }
 
