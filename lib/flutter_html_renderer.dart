@@ -28,7 +28,7 @@ class HtmlRenderer extends StatefulWidget {
   HtmlRenderer(
       {this.initialHtmlString,
       this.initialNodes,
-      this.keepAlive,
+        this.keepAlive = false,
       this.linkHandler});
 
   @override

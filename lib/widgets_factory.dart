@@ -92,7 +92,7 @@ class WidgetsFactory {
     ElementDescriptor(name: 'main', supported: true, isBlock: true),
     ElementDescriptor(name: 'nav', supported: true, isBlock: true),
     ElementDescriptor(name: 'ol', supported: false, isBlock: true),
-    ElementDescriptor(name: 'p', supported: true, isBlock: true),
+    PDescriptor(),
     ElementDescriptor(name: 'pre', supported: false, isBlock: true),
     ElementDescriptor(name: 'section', supported: true, isBlock: true),
     ElementDescriptor(name: 'table', supported: false, isBlock: true),
@@ -375,6 +375,37 @@ class HeaderDescriptor extends ElementDescriptor {
     return Padding(
       child: children,
       padding: EdgeInsets.symmetric(vertical: 5),
+    );
+  }
+}
+
+/// <p> descriptor.
+/// This will add padding after default rendering
+/// of child nodes
+class PDescriptor extends ElementDescriptor {
+  const PDescriptor()
+      : super(
+    name: 'p',
+    supported: true,
+    isInline: false,
+    isBlock: true,
+  );
+
+  @override
+  Future<Widget> render(dom.Element element,
+      BuildContext context,
+      WidgetsFactory widgetsFactory,
+      LinkHandler linkHandler,
+      RenderingContext renderingContext) async {
+    Widget children;
+    if (element.nodes.isNotEmpty) {
+      children = await widgetsFactory.nodeListToWidgets(element.nodes, context,
+          linkHandler: linkHandler, renderingContext: renderingContext);
+    }
+    children ??= Container();
+    return Padding(
+      child: children,
+      padding: EdgeInsets.only(bottom: 5),
     );
   }
 }
