@@ -139,7 +139,6 @@ Form elements are currently not planned before first stable release.
 CSS and advanced styling support is not planned before first stable release
 ## TODOs
 
-* Add working example
 * Add tests
 
 ## Contribution and Support
