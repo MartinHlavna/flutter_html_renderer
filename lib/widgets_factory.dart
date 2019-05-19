@@ -180,6 +180,7 @@ class WidgetsFactory {
             currentFlow.add(Text(
               node.text,
               style: Theme.of(context).textTheme.body2,
+              softWrap: true,
             ));
           } else if (renderingContext.hasHeaderParent) {
             currentFlow.add(Text(
@@ -194,6 +195,7 @@ class WidgetsFactory {
             currentFlow.add(Text(
               node.text,
               style: Theme.of(context).textTheme.body1,
+              softWrap: true,
             ));
           }
         }

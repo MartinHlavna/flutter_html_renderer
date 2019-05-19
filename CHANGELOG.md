@@ -1,3 +1,7 @@
+## [0.1.1]
+* Fixed wrapping issues
+* Implemented health suggestions on pub analysis
+
 ## [0.1.0]
 * Support for iframes embeding YouTube videos
 
@@ -9,5 +13,4 @@
 * Minor improvement of p tag rendering
 
 ## [0.0.1]
-
 * Initial alpha release of library.
