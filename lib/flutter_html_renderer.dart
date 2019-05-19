@@ -64,6 +64,11 @@ class HtmlRendererState extends State<HtmlRenderer>
 
   @override
   Widget build(BuildContext context) {
+    //NOTE: Subclasses must implement wantKeepAlive, and their build methods
+    // must call super.build
+    // (the return value will always return null, and should be ignored)
+    super.build(context);
+
     return FutureBuilder<Widget>(
       future: _rendererFuture,
       builder: (BuildContext context, AsyncSnapshot<Widget> snapshot) {

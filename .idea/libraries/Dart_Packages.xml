@@ -263,6 +263,20 @@
             </list>
           </value>
         </entry>
+        <entry key="youtube_player_flutter">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/youtube_player_flutter-1.1.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="ytview">
+          <value>
+            <list>
+              <option value="$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/ytview-0.0.7+3/lib" />
+            </list>
+          </value>
+        </entry>
       </option>
     </properties>
     <CLASSES>
@@ -302,6 +316,8 @@
       <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/utf-0.9.0+5/lib" />
       <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.0.8/lib" />
       <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/xml-3.3.1/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/youtube_player_flutter-1.1.0/lib" />
+      <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/.pub-cache/hosted/pub.dartlang.org/ytview-0.0.7+3/lib" />
       <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/bin/cache/pkg/sky_engine/lib" />
       <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/packages/flutter/lib" />
       <root url="file://$PROJECT_DIR$/../../../../opt/dart/flutter/packages/flutter_test/lib" />
