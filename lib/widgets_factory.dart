@@ -443,8 +443,10 @@ class IframeDescriptor extends ElementDescriptor {
       return YoutubePlayer(
         context: context,
         videoId: videoId,
-        autoPlay: false,
-        showVideoProgressIndicator: true,
+        flags: YoutubePlayerFlags(
+          autoPlay: false,
+          showVideoProgressIndicator: true,
+        ),
         videoProgressIndicatorColor: theme.primaryColor,
         progressColors: ProgressColors(
           playedColor: theme.primaryColor,

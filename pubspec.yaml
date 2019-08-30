@@ -1,6 +1,6 @@
 name: flutter_html_renderer
 description: Simple HTML renderer for flutter. Converts HTML into Widgets
-version: 0.1.1
+version: 0.1.2
 author: Martin Hlavňa <mato.hlavna@gmail.com>
 homepage: https://github.com/MartinHlavna/flutter_html_renderer
 
@@ -8,10 +8,10 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
-  html: ^0.13.4+1
-  flutter_advanced_networkimage: ^0.4.15
-  url_launcher: ^5.0.2
-  youtube_player_flutter: ^1.1.0
+  html: ^0.14.0
+  flutter_advanced_networkimage: ^0.5.0
+  url_launcher: ^5.1.2
+  youtube_player_flutter: ^4.1.0
   flutter:
     sdk: flutter
 

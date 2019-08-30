@@ -1,3 +1,6 @@
+## [0.1.2]
+* Upgraded dependencies
+
 ## [0.1.1]
 * Fixed wrapping issues
 * Implemented health suggestions on pub analysis
