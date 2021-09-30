@@ -1,3 +1,8 @@
+ATTENTION:
+
+* PROJECT IN IT'S CURRENT STATE IS ABBANDONED. FEEL FREE TO FORK.
+
+
 # flutter_html_renderer
 
 Simple HTML renderer for flutter. Converts HTML into Widgets.
